@@ -1,0 +1,106 @@
+
+body{
+    background: radial-gradient(circle at bottom center, rgb(29, 77, 75), black);
+    min-height: 100vh;
+}
+header{
+    padding-left: 15px;
+    background: linear-gradient(to right, transparent, rgba(226, 225, 225, 0.678))  ;   
+    h1{
+        background: radial-gradient( gold 60%, rgb(94, 92, 92));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+.game{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    .levelTitle{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        #levelHeader{
+            color: gold;
+            font-size: 38pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        
+        #results{
+            height: 28pt;
+            p{
+                text-align: center;
+                font-size: 28pt;
+            }
+        }
+
+    }
+
+
+    #sodukoBoard{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        table{
+            border: 3px solid rgb(53,53,53);
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
+            background-color: gold;
+            .thickRow{
+                border-top: 3px solid rgb(53,53,53);
+                border-left: 1px solid rgb(53,53,53);
+                border-right: 1px solid rgb(53,53,53);
+                border-bottom: 1px solid rgb(53,53,53);
+            }
+            .regularRow{
+                border: 1px solid rgb(53,53,53);
+            }
+            .thickCol{
+                border-right: 3px solid rgb(53,53,53);
+            }
+            .regularCol{
+                border: 1px solid rgb(53,53,53);
+            }
+            td{
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                font-size: 16pt;
+                border: 0px solid transparent;
+            }
+            .input{
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                border: 0px;
+                text-align: center;
+                color: gold;
+                background-color:rgb(29, 77, 75);
+            }
+        }
+        .gameButtons{
+            margin-top: 20px;
+            button{
+                cursor: pointer;
+                color: rgb(53,53,53);
+                background-color: gold; 
+                font-size: 22px;
+                border-radius: 3px;
+                box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+
+
+
+

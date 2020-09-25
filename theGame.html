@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soduko - Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='style.css'> -->
+    <link rel="stylesheet" href="/styles/style.css">
+  
+</head>
+<body>
+    <header>
+        <h1 id="header">Sudoku</h1>
+    </header>
+    <section class="game">
+        <div class="levelTitle">
+            <h1 id="levelHeader"></h1>
+            <div id="results">
+                <p id="gameResult"></p>
+            </div>
+        </div>
+        <div id="sodukoBoard">
+            <table>
+                <tr class="thickRow">
+                    <td id="cell1" class="regularCol"></td>
+                    <td id="cell2" class="regularCol"></td>
+                    <td id="cell3" class="thickCol"></td>
+                    <td id="cell4" class="regularCol"></td>
+                    <td id="cell5" class="regularCol"></td>
+                    <td id="cell6" class="thickCol"></td>
+                    <td id="cell7" class="regularCol"></td>
+                    <td id="cell8" class="regularCol"></td>
+                    <td id="cell9" class="regularCol"></td>
+                </tr>
+                <tr class="regularRow">
+                    <td id="cell10" class="regularCol"></td>
+                    <td id="cell11" class="regularCol"></td>
+                    <td id="cell12" class="thickCol"></td>
+                    <td id="cell13" class="regularCol"></td>
+                    <td id="cell14" class="regularCol"></td>
+                    <td id="cell15" class="thickCol"></td>
+                    <td id="cell16" class="regularCol"></td>
+                    <td id="cell17" class="regularCol"></td>
+                    <td id="cell18" class="regularCol"></td>
+                </tr>
+                <tr class="regularRow">
+                    <td id="cell19" class="regularCol"></td>
+                    <td id="cell20" class="regularCol"></td>
+                    <td id="cell21" class="thickCol"></td>
+                    <td id="cell22" class="regularCol"></td>
+                    <td id="cell23" class="regularCol"></td>
+                    <td id="cell24" class="thickCol"></td>
+                    <td id="cell25" class="regularCol"></td>
+                    <td id="cell26" class="regularCol"></td>
+                    <td id="cell27" class="regularCol"></td>
+                </tr>
+                <tr class="thickRow">
+                    <td id="cell28" class="regularCol"></td>
+                    <td id="cell29" class="regularCol"></td>
+                    <td id="cell30" class="thickCol"></td>
+                    <td id="cell31" class="regularCol"></td>
+                    <td id="cell32" class="regularCol"></td>
+                    <td id="cell33" class="thickCol"></td>
+                    <td id="cell34" class="regularCol"></td>
+                    <td id="cell35" class="regularCol"></td>
+                    <td id="cell36" class="regularCol"></td>
+                </tr>
+                <tr class="regularRow">
+                    <td id="cell37" class="regularCol"></td>
+                    <td id="cell38" class="regularCol"></td>
+                    <td id="cell39" class="thickCol"></td>
+                    <td id="cell40" class="regularCol"></td>
+                    <td id="cell41" class="regularCol"></td>
+                    <td id="cell42" class="thickCol"></td>
+                    <td id="cell43" class="regularCol"></td>
+                    <td id="cell44" class="regularCol"></td>
+                    <td id="cell45" class="regularCol"></td>
+                </tr>
+                <tr class="regularRow">
+                    <td id="cell46" class="regularCol"></td>
+                    <td id="cell47" class="regularCol"></td>
+                    <td id="cell48" class="thickCol"></td>
+                    <td id="cell49" class="regularCol"></td>
+                    <td id="cell50" class="regularCol"></td>
+                    <td id="cell51" class="thickCol"></td>
+                    <td id="cell52" class="regularCol"></td>
+                    <td id="cell53" class="regularCol"></td>
+                    <td id="cell54" class="regularCol"></td>
+                </tr>
+                <tr class="thickRow">
+                    <td id="cell55" class="regularCol"></td>
+                    <td id="cell56" class="regularCol"></td>
+                    <td id="cell57" class="thickCol"></td>
+                    <td id="cell58" class="regularCol"></td>
+                    <td id="cell59" class="regularCol"></td>
+                    <td id="cell60" class="thickCol"></td>
+                    <td id="cell61" class="regularCol"></td>
+                    <td id="cell62" class="regularCol"></td>
+                    <td id="cell63" class="regularCol"></td>
+                </tr>
+                <tr class="regularRow">
+                    <td id="cell64" class="regularCol"></td>
+                    <td id="cell65" class="regularCol"></td>
+                    <td id="cell66" class="thickCol"></td>
+                    <td id="cell67" class="regularCol"></td>
+                    <td id="cell68" class="regularCol"></td>
+                    <td id="cell69" class="thickCol"></td>
+                    <td id="cell70" class="regularCol"></td>
+                    <td id="cell71" class="regularCol"></td>
+                    <td id="cell72" class="regularCol"></td>
+                </tr>
+                <tr class="regularRow">
+                <td id="cell73" class="regularCol"></td>
+                <td id="cell74" class="regularCol"></td>
+                <td id="cell75" class="thickCol"></td>
+                <td id="cell76" class="regularCol"></td>
+                <td id="cell77" class="regularCol"></td>
+                <td id="cell78" class="thickCol"></td>
+                <td id="cell79" class="regularCol"></td>
+                <td id="cell80" class="regularCol"></td>
+                <td id="cell81" class="regularCol"></td>
+            </tr>
+            </table>
+            <div class="gameButtons">
+                <button onClick="printResult()" type="button" class="gameBtns">Finish</button>
+                <button onClick="again()" type="button" >Again</button>
+                <a href="dificulty.html"><button type="button">Return to Level</button></a>
+            </div>
+        </div>
+    </section>
+    <script src='script.js'></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background: radial-gradient(circle at bottom center, rgb(29, 77, 75), black);
+    min-height: 50vh;
+}
+.reg-div{
+    border: 5px solid gold;
+    width: 550px;
+    height: 500px ;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0px 20px 20px -6px rgb(56, 141, 137);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    h1{
+        background: radial-gradient(circle, gold, rgb(94, 92, 92));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 42pt;
+        margin-top: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input{
+        border: 0.3px solid gold;
+        height: 50px ;
+        width: 300px;
+        font-size: 28px;
+        background: white;
+    }
+    button{
+        border: 1px solid gold;
+        color: rgb(94, 92, 92);
+        background: radial-gradient(circle at bottom center, whitesmoke, gold) ;
+        font-size: 22px;
+        border-radius: 3px;
+        height: 50px ;
+        width: 300px;
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+}

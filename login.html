@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudoku Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='style.css'> -->
+    <link rel='stylesheet' href="/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    <div id="squares">
+        <div class="top-squares">
+            <div id="square1">1</div>
+            <div id="square2">5</div>
+            <div id="square3">8</div>   
+        </div>     
+        <table>
+            <tr>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="ltr"></td>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+                <td class="ltr"></td>
+                <td class="tran"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+                <td class="ltr"></td>
+                <td class="tran"></td>
+            </tr>
+            <tr>
+                <td class="rtl"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+                <td class="tran"></td>
+                <td class="rtl"></td>
+                <td class="void"></td>
+                <td class="ltr"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+                <td class="ltr"></td>
+                <td class="void"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="ltr"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="rtl"></td>
+                <td class="void"></td>
+                <td class="ltr"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="void"></td>
+                <td class="tran"></td>
+                <td class="void"></td>
+                <td class="tran"></td>
+            </tr>
+            <tr>
+                <td class="void"></td>
+                <td class="ltr"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="loginSquare">
+        <div id="title">
+            <h1> Sudoku </h1>
+        </div>
+        <div id="inputs">
+            <input id="UserNameInput" placeholder="User Name" type="text">
+            <p id="inputuser" class="enterResults"></p>
+            <input id="PasswordInput" placeholder="Password" type="text">
+            <p id="inputpassword" class="enterResults"></p>
+            <button type="button" onclick="login()"> Enter </button>
+            <p id="register">Not registered?</p>
+            <a href="register.html"><button type="button">Register</button></a>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+header{
+    padding-left: 15px;
+    background: linear-gradient(to right, transparent, rgba(226, 225, 225, 0.678))  ;   
+    h1{
+        background: radial-gradient( gold 60%, rgb(94, 92, 92));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+.dificulty{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    
+    #welcomeBackground{
+        border: 0px solid transparent;
+        border-radius: 2px 35px;
+        background: linear-gradient(to right, rgb(255, 187, 0), gold 40%, rgba(255, 217, 0, 0.671) 80%);
+        width: 350px;
+        height: 500px ;
+        margin: 2% 2% 5% 7%;
+        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+        position: relative;
+        h1{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 50px;
+            color: rgb(53,53,53);
+            span{
+                color: rgb(56, 141, 137);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+        p{
+            margin-top: 80px;
+            color: rgb(53,53,53);
+            font-size: 32px;
+            text-align: center;
+        }
+        .levelButtons{
+            text-align: center;
+            justify-content: space-between;
+            button{
+                margin: 15px 5px 0px;
+                border: 3px solid rgb(56, 141, 137);
+                color: rgb(53,53,53);
+                background-color: transparent; 
+                font-size: 22px;
+                border-radius: 3px;
+                box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2), 
+                /* 0px -10px 10px -6px rgba(0, 0, 0, 0.2), */
+                inset 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+            }
+            button:hover{
+                border: 2px solid rgb(202, 245, 243);
+            }
+        }
+    }
+
+
+    #instructionBubbles{
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translateY(-50%);
+        #instructionBackground{
+            z-index: 1;
+            border-radius: 50%;
+            background: rgba(29, 77, 75, 0.5);
+            width: 500px;
+            height: 500px ;
+            box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+            .instructions{
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                // border: solid 1px  red;
+                // width: 50%;
+                // height: 50%;
+                h1{
+                    position: absolute;
+                    top:10%;
+                    font-size: 50px;
+                    color: gold;
+                }
+                p{
+                    position: absolute;
+                    font-size: 20px;
+                    color: gold;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 300px;
+                    span{
+                        font-size: 38px;
+                    }
+                }
+            }
+        }
+        #bubble1{
+            z-index: -1;
+            content: "";
+            position: absolute;
+            background: gold;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            left: 70%;
+            bottom: 80%;
+        }
+        #bubble2{
+            z-index: -2;
+            content: "";
+            position: absolute;
+            background: rgb(168, 143, 1);
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            left: 80%;
+            bottom: 60%;
+        }
+    }
+}
+
+
+
+

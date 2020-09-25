@@ -1,0 +1,389 @@
+
+
+/* body{
+    background: radial-gradient(circle at bottom center, rgb(29, 77, 75), black);
+} */
+/* Loging page */
+/* #squares{
+    z-index: -1;
+    display: inline-block;
+    position: relative;
+    margin-top: 10% ;
+    margin-left: 12%;
+    margin-right: -80px;
+    margin-bottom: 10%;
+    border: 0px;
+}
+#square1, #square2, #square3{
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgb(29, 77, 75);
+    position: absolute;
+    transform: rotate(-18deg);
+    background-image: linear-gradient(to right, rgb(29, 77, 75) 40%, gold 55%, rgb(29, 77, 75) 75%);
+    background-size: 400%;
+    animation: ltr 2s infinite 0.5s;
+    text-align: center;
+    font-size: 16pt;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    left: 20%;
+    bottom: 75%;
+    text-align: center;
+}
+#square2{
+    font-size: 36pt;
+    padding-top: 15px;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    bottom: 20%;
+}
+#square3{
+    font-size: 28pt;
+    padding-top: 10px;
+    width: 70px;
+    height: 70px;
+    left: 42%;
+    bottom: 50%;
+}
+
+.ltr{
+    background-image: linear-gradient(to right, rgba(255, 217, 0, 0.425) 60%, gold 70%, rgba(255, 217, 0, 0.425) 80%);
+    background-size: 500%;
+    animation: ltr 2s infinite;
+}
+.rtl{
+    background-image: linear-gradient(to left, rgba(255, 217, 0, 0.425), gold);
+}
+.tran{
+    background: transparent;
+    border: 0.5px solid gold;
+}
+
+@keyframes ltr{
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
+
+
+
+#loginSquare{
+    border: 5px solid gold;
+    width: 550px;
+    height: 500px ;
+    text-align: center;
+    margin-left: -3px;
+    margin-top: 5% ;
+    background: transparent;
+    box-shadow: 0px 20px 20px -6px rgb(56, 141, 137);
+    position: fixed;
+    display: inline-block;
+}
+
+#title{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainTitle{
+    background: radial-gradient(circle, gold, rgb(94, 92, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#inputs{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.allInputs{
+    border: 0.3px solid gold;
+    height: 50px ;
+    width: 300px;
+    font-size: 28px;
+    background: white;
+}     */
+/* #PasswordInput{
+    border: 0.3px solid gold;
+    margin-top: 20px;
+    height: 50px ;
+    width: 300px;
+    font-size: 28px;
+} */
+/* .EnterBtn{
+    border: 1px solid gold;
+    color: rgb(94, 92, 92);
+    background: radial-gradient(circle at bottom center, whitesmoke, gold) ;
+    font-size: 22px;
+    border-radius: 3px;
+    height: 50px ;
+    width: 300px;
+    margin-top: 60px ;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#register{
+    color: gold;
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 10px;
+} 
+.enterResults{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(185, 19, 19);
+    height: 20px;
+    font-weight: bold;
+    }
+    
+.result{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(173, 19, 19);
+}  */
+/* footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gold;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    margin-top: 20px;
+    bottom: 0;
+    position: fixed;
+    padding-top: 12px;
+} */
+
+/* registration */
+/* .reg-div{
+    border: 5px solid gold;
+    width: 550px;
+    height: 500px ;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0px 20px 20px -6px rgb(56, 141, 137);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+#regTitle{
+    background: radial-gradient(circle, gold, rgb(94, 92, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42pt;
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* levels page */
+/* header{
+    padding-left: 15px;
+    background: linear-gradient(to right, transparent, rgba(226, 225, 225, 0.678))  ;   
+}
+#header{
+    background: radial-gradient( gold 60%, rgb(94, 92, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#welcomeBackground{
+    border: 0px solid transparent;
+    border-radius: 2px 35px;
+    background: linear-gradient(to right, rgb(255, 187, 0), gold 40%, rgba(255, 217, 0, 0.671) 80%);
+    width: 350px;
+    height: 500px ;
+    margin: 2% 2% 5% 7%;
+    display: inline-block;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#welcomeTitle{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(53,53,53);
+}
+#name{
+    color: rgb(56, 141, 137);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.levelTitle{
+    margin-top: 80px;
+    color: rgb(53,53,53);
+    font-size: 32px;
+    text-align: center;
+}
+.btns{
+margin-top: 15px;
+border: 3px solid rgb(56, 141, 137);
+color: rgb(53,53,53);
+background-color: transparent; 
+font-size: 22px;
+border-radius: 3px;
+box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2), 
+0px -10px 10px -6px rgba(0, 0, 0, 0.2),
+inset 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+    background-color: rgb(214, 236, 236);
+    border: 2px solid rgb(202, 245, 243);
+}
+#instructionBubbles{
+    position: absolute;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    right: 15%;
+}
+#instructionBackground{
+    z-index: 1;
+    border-radius: 50%;
+    background: rgba(29, 77, 75, 0.5);
+    width: 500px;
+    height: 500px ;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#bubble1{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background: gold;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    left: 70%;
+    bottom: 80%;
+}
+#bubble2{
+    z-index: -2;
+    content: "";
+    position: absolute;
+    background: rgb(168, 143, 1);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    left: 80%;
+    bottom: 60%;
+}
+#instructionTitle{
+    padding-top: 50px;
+    font-size: 50px;
+    color: gold;
+}
+#Instructions{
+    font-size: 20px;
+    color: gold;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 150px;
+}
+#sudoku{
+    color: gold;
+    font-size: 28px;
+}
+.levelButtons{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* Game page */
+/* #levelHeader{
+    color: gold;
+    font-size: 42pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#gameSquares{
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 12%;
+    margin-bottom: 10%;
+    border: 0px;
+}
+#sodukoBoard{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 32.5%;
+    text-align: center;
+    position: sticky;
+    display: inline-block;
+}
+table#board{
+    border: 3px solid rgb(53,53,53);
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+    background-color: gold;
+}
+.thickRow{
+    border-top: 3px solid rgb(53,53,53);
+    border-left: 1px solid rgb(53,53,53);
+    border-right: 1px solid rgb(53,53,53);
+    border-bottom: 1px solid rgb(53,53,53);
+}
+.regularRow{
+    border: 1px solid rgb(53,53,53);
+}
+.thickCol{
+    border-right: 3px solid rgb(53,53,53);
+}
+.regularCol{
+    border: 1px solid rgb(53,53,53);
+}
+td{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16pt;
+    border: 0px solid transparent;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0px;
+    text-align: center;
+    color: gold;
+    background-color:rgb(29, 77, 75);
+}
+#results{
+    height: 28pt;
+}
+#gameResult{
+    text-align: center;
+    font-size: 28pt;
+}
+.gameButtons{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+} */
+/* .gameBtns{
+    margin-top: 15px;
+    border: 3px solid rgb(56, 141, 137);
+    color: rgb(53,53,53);
+    background-color: gold; 
+    font-size: 22px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+    } */

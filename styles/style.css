@@ -1,0 +1,536 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at bottom center, #1d4d4b, black);
+  min-height: 80vh;
+}
+
+#squares {
+  z-index: -1;
+  border: 0px;
+  width: 400px;
+  height: 450px;
+  position: relative;
+  margin-left: 7%;
+  margin-top: 10%;
+}
+
+#squares table {
+  top: 0;
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  z-index: -2;
+}
+
+#squares .top-squares {
+  z-index: 1;
+  padding-top: 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  width: 400px;
+  height: 450px;
+}
+
+#squares #square1, #squares #square2, #squares #square3 {
+  -webkit-box-shadow: 5px 5px 10px #1d4d4b;
+          box-shadow: 5px 5px 10px #1d4d4b;
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #1d4d4b), color-stop(55%, gold), color-stop(75%, #1d4d4b));
+  background-image: linear-gradient(to right, #1d4d4b 40%, gold 55%, #1d4d4b 75%);
+  background-size: 400%;
+  -webkit-animation: ltr 2s infinite 0.5s;
+          animation: ltr 2s infinite 0.5s;
+  text-align: center;
+}
+
+#squares #square1 {
+  padding: 10px;
+  font-size: 16pt;
+  width: 50px;
+  height: 50px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#squares #square2 {
+  font-size: 36pt;
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#squares #square3 {
+  font-size: 28pt;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#squares .ltr {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, rgba(255, 217, 0, 0.425)), color-stop(70%, gold), color-stop(80%, rgba(255, 217, 0, 0.425)));
+  background-image: linear-gradient(to right, rgba(255, 217, 0, 0.425) 60%, gold 70%, rgba(255, 217, 0, 0.425) 80%);
+  background-size: 500%;
+  -webkit-animation: ltr 2s infinite;
+          animation: ltr 2s infinite;
+}
+
+#squares .rtl {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 217, 0, 0.425)), to(gold));
+  background-image: linear-gradient(to left, rgba(255, 217, 0, 0.425), gold);
+}
+
+#squares .tran {
+  background: transparent;
+  border: 0.5px solid gold;
+}
+
+@-webkit-keyframes ltr {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes ltr {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+#loginSquare {
+  border: 5px solid gold;
+  width: 550px;
+  height: 500px;
+  text-align: center;
+  background: transparent;
+  -webkit-box-shadow: 0px 20px 20px -6px #388d89;
+          box-shadow: 0px 20px 20px -6px #388d89;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#loginSquare #title {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginSquare #title h1 {
+  background: radial-gradient(circle, gold, #5e5c5c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#loginSquare #inputs {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginSquare #inputs input {
+  border: 0.3px solid gold;
+  height: 50px;
+  width: 300px;
+  font-size: 28px;
+  background: white;
+}
+
+#loginSquare #inputs .enterResults {
+  text-align: center;
+  font-size: 20px;
+  color: #b91313;
+  height: 20px;
+  font-weight: bold;
+}
+
+#loginSquare #inputs button {
+  border: 1px solid gold;
+  color: #5e5c5c;
+  background: radial-gradient(circle at bottom center, whitesmoke, gold);
+  font-size: 22px;
+  border-radius: 3px;
+  height: 50px;
+  width: 300px;
+  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#loginSquare #inputs #register {
+  color: gold;
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 10px;
+}
+
+body {
+  background: radial-gradient(circle at bottom center, #1d4d4b, black);
+  min-height: 50vh;
+}
+
+.reg-div {
+  border: 5px solid gold;
+  width: 550px;
+  height: 500px;
+  text-align: center;
+  background: transparent;
+  -webkit-box-shadow: 0px 20px 20px -6px #388d89;
+          box-shadow: 0px 20px 20px -6px #388d89;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.reg-div h1 {
+  background: radial-gradient(circle, gold, #5e5c5c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 42pt;
+  margin-top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reg-div input {
+  border: 0.3px solid gold;
+  height: 50px;
+  width: 300px;
+  font-size: 28px;
+  background: white;
+}
+
+.reg-div button {
+  border: 1px solid gold;
+  color: #5e5c5c;
+  background: radial-gradient(circle at bottom center, whitesmoke, gold);
+  font-size: 22px;
+  border-radius: 3px;
+  height: 50px;
+  width: 300px;
+  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  padding-left: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(226, 225, 225, 0.678)));
+  background: linear-gradient(to right, transparent, rgba(226, 225, 225, 0.678));
+}
+
+header h1 {
+  background: radial-gradient(gold 60%, #5e5c5c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dificulty {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dificulty #welcomeBackground {
+  border: 0px solid transparent;
+  border-radius: 2px 35px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffbb00), color-stop(40%, gold), color-stop(80%, rgba(255, 217, 0, 0.671)));
+  background: linear-gradient(to right, #ffbb00, gold 40%, rgba(255, 217, 0, 0.671) 80%);
+  width: 350px;
+  height: 500px;
+  margin: 2% 2% 5% 7%;
+  -webkit-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.dificulty #welcomeBackground h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 50px;
+  color: #353535;
+}
+
+.dificulty #welcomeBackground h1 span {
+  color: #388d89;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dificulty #welcomeBackground p {
+  margin-top: 80px;
+  color: #353535;
+  font-size: 32px;
+  text-align: center;
+}
+
+.dificulty #welcomeBackground .levelButtons {
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dificulty #welcomeBackground .levelButtons button {
+  margin: 15px 5px 0px;
+  border: 3px solid #388d89;
+  color: #353535;
+  background-color: transparent;
+  font-size: 22px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2), inset 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2), inset 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+}
+
+.dificulty #welcomeBackground .levelButtons button:hover {
+  border: 2px solid #caf5f3;
+}
+
+.dificulty #instructionBubbles {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.dificulty #instructionBubbles #instructionBackground {
+  z-index: 1;
+  border-radius: 50%;
+  background: rgba(29, 77, 75, 0.5);
+  width: 500px;
+  height: 500px;
+  -webkit-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.dificulty #instructionBubbles #instructionBackground .instructions h1 {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: gold;
+}
+
+.dificulty #instructionBubbles #instructionBackground .instructions p {
+  position: absolute;
+  font-size: 20px;
+  color: gold;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.dificulty #instructionBubbles #instructionBackground .instructions p span {
+  font-size: 38px;
+}
+
+.dificulty #instructionBubbles #bubble1 {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background: gold;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  left: 70%;
+  bottom: 80%;
+}
+
+.dificulty #instructionBubbles #bubble2 {
+  z-index: -2;
+  content: "";
+  position: absolute;
+  background: #a88f01;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  left: 80%;
+  bottom: 60%;
+}
+
+body {
+  background: radial-gradient(circle at bottom center, #1d4d4b, black);
+  min-height: 100vh;
+}
+
+header {
+  padding-left: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(226, 225, 225, 0.678)));
+  background: linear-gradient(to right, transparent, rgba(226, 225, 225, 0.678));
+}
+
+header h1 {
+  background: radial-gradient(gold 60%, #5e5c5c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.game .levelTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.game .levelTitle #levelHeader {
+  color: gold;
+  font-size: 38pt;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.game .levelTitle #results {
+  height: 28pt;
+}
+
+.game .levelTitle #results p {
+  text-align: center;
+  font-size: 28pt;
+}
+
+.game #sodukoBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.game #sodukoBoard table {
+  border: 3px solid #353535;
+  border-collapse: collapse;
+  width: 400px;
+  height: 400px;
+  background-color: gold;
+}
+
+.game #sodukoBoard table .thickRow {
+  border-top: 3px solid #353535;
+  border-left: 1px solid #353535;
+  border-right: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+}
+
+.game #sodukoBoard table .regularRow {
+  border: 1px solid #353535;
+}
+
+.game #sodukoBoard table .thickCol {
+  border-right: 3px solid #353535;
+}
+
+.game #sodukoBoard table .regularCol {
+  border: 1px solid #353535;
+}
+
+.game #sodukoBoard table td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16pt;
+  border: 0px solid transparent;
+}
+
+.game #sodukoBoard table .input {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0px;
+  text-align: center;
+  color: gold;
+  background-color: #1d4d4b;
+}
+
+.game #sodukoBoard .gameButtons {
+  margin-top: 20px;
+}
+
+.game #sodukoBoard .gameButtons button {
+  cursor: pointer;
+  color: #353535;
+  background-color: gold;
+  font-size: 22px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=style.css.map */
